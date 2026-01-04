@@ -6,10 +6,10 @@ html, body {
 }
 
 
-#scada {
+#PID-scada-container {
   position: relative;
-  width: 2600px;
-  height: 1300px;
+  width: 1920px;
+  height: 1080;
   left: 100px;
   background-image: url("../images/PID.png");
   background-repeat: no-repeat;
