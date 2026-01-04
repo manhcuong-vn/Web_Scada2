@@ -8,7 +8,7 @@ html, body {
 
 #PID-scada-container {
   position: relative;
-  width: 1920px;
+  width: 100vw;
   height: 100vh;
   left: 500px;
   background-image: url("../images/PID.png");
