@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/state.css">
+    
+    <title>Web Scada</title>
+</head>
+<body>
+
+    <div id="scada">
+        <div id="PK131"
+            class="pump state-stop  rotate-0"
+            style="left: 646px; top: 673px;">
+        </div>
+
+        <div id="PK1601"
+            class="pump state-stop  mirror-x"
+            style="left: 1106px; top: 1138px;">
+        </div>
+
+         <div id="pHS011" class="tag-value" style="left: 400px; top: 568px;">
+            <span class="value">---</span>
+        </div> 
+
+        <div id="PT131" class="tag-value" style="left: 705px; top: 470px;">
+            <span class="value">---</span>
+        </div>
+
+        <div id="pHS131" class="tag-value" style="left: 480px; top: 568px;">
+            <span class="value">---</span>
+        </div>      
+    </div>
+    
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--JAVA SCRIPT-->
+    <script src="js/plcData.js"></script>
+    <script src="js/stateControl.js"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

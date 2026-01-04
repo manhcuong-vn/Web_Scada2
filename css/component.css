@@ -1,0 +1,52 @@
+button {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #08a5e4;
+    cursor: pointer;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.btn-small {
+    width: 50px;
+    height: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.input {
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+
+.tag-input {
+    position: absolute;
+}
+
+.tag-value {
+  position: absolute;
+  font-size: 14px;
+  color: #000000;
+}
+
+.tag-value .value {
+  font-weight: bold;
+  color: #fff;
+}
+
+.tag-value .value.changed {
+  background: rgba(255, 213, 79, 0.25);
+  transition: background 0.3s;
+}
+
+

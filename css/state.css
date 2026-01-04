@@ -1,0 +1,74 @@
+
+/* ===== BƠM ===== */
+.pump {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Trạng thái bơm */
+.state-stop  { background-image: url("../icons/pump_stop.png"); }
+.state-run   { background-image: url("../icons/pump_run.png"); }
+.state-alarm { background-image: url("../icons/pump_alarm.png"); }
+
+.pump.state-alarm {
+  animation: blinkAlarm 1s infinite;
+}
+
+/* Xoay bơm */
+.pump {
+  --rot: 0deg;
+  --sx: 1;
+  --sy: 1;
+  transform: rotate(var(--rot)) scale(var(--sx), var(--sy));
+}
+
+.rotate-0   { --rot: 0deg; }
+.rotate-180 { --rot: 180deg; }
+
+.mirror-x { --sx: -1; }
+.mirror-y { --sy: -1; }
+
+
+/* ===== VAN ===== */
+
+/* Trạng thái van */
+.pos-full-open  { background-color: #00c853; }
+.pos-full-close { background-color: #d50000; }
+.pos-moving     { background-color: orange; }
+
+
+.cmd-open {
+    stroke: #00e5ff;
+    stroke-width: 2px;
+}
+
+.cmd-close {
+    stroke: #ffab00;
+    stroke-width: 2px;
+}
+
+/* ===== SETUP ===== */
+.setup {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.setup span {
+  font-weight: bold;
+  color: #fff;
+}
+
+.changed {
+  background: rgba(255, 213, 79, 0.25);
+}
+
+
+@keyframes blinkAlarm {
+    0%   { opacity: 1; }
+    50%  { opacity: 0.2; }
+    100% { opacity: 1; }
+}
+
